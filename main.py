@@ -34,6 +34,12 @@ async def on_message(message):
         # Subcommand: /profile setup
         if subcommand == "setup":
             user_id = message.author.id
+            
+            # Check if the user already has a profile
+            if user_id in user_profiles:
+                await message.channel.send("You already have a profile set up.")
+                return
+
             user_profiles[user_id] = {}  # Initialize user's profile data
 
             await message.channel.send("Please enter your name:")
