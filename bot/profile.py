@@ -56,7 +56,7 @@ async def profile_commands(message, user_profiles, user_projects, bot):
                     profile_embed.set_thumbnail(url=profile.get("avatar_url", ""))
 
                     # Send the embed with a "Connect" button using ProfileView
-                    await message.channel.send(embed=profile_embed, view=ProfileView(message.author.id, user_id))
+                    await message.channel.send(embed=profile_embed, view=ProfileView(message.author.id, user_id, bot))
 
             else:
                 no_profiles_embed = discord.Embed(
