@@ -65,6 +65,12 @@ async def profile_commands(message, user_profiles, user_projects, bot):
                     color=discord.Color.red()
                 )
                 await message.channel.send(embed=no_profiles_embed)
+        
+        elif subcommand == "connect":
+            await message.channel.send("Connect command is not implemented yet. 🚧")
+        
+        elif subcommand == "notifications":
+            await message.channel.send("Notifications command is not implemented yet. 🚧")
 
 class ProfileView(discord.ui.View):
     # Initialize with user and target user IDs, and bot instance
