@@ -44,6 +44,6 @@ async def on_message(message):
 
     # Handle brainstorm commands
     if message.content.startswith('/brainstorm'):
-        await brainstorm_commands(message)
+        await brainstorm_commands(message, bot)
 
 bot.run(os.getenv('DISCORD_TOKEN'))

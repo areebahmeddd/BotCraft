@@ -3,7 +3,7 @@ import json
 
 # Load tutorials data from JSON file
 with open('resources/tutorials.json', 'r') as f:
-    tutorials = json.load(f)
+    tutorial_data = json.load(f)
 
 async def learn_commands(message):
     command_parts = message.content.split(maxsplit=2)
@@ -13,8 +13,8 @@ async def learn_commands(message):
         language = command_parts[1].lower()
 
         # Sub command: /learn <language>
-        if language in tutorials:
-            tutorial_list = tutorials[language]
+        if language in tutorial_data:
+            tutorial_list = tutorial_data[language]
             embed = discord.Embed(
                 title=f'{language.capitalize()} Tutorials',
                 description=f'A list of useful tutorials for {language.capitalize()}.',
@@ -41,10 +41,10 @@ async def learn_commands(message):
         tutorial_name = command_parts[2].strip().lower()
 
         # Check if tutorials exist for the given language
-        if language in tutorials:
+        if language in tutorial_data:
             # Try to find the tutorial by name
             tutorial = next(
-                (t for t in tutorials[language] if t['course_name'].strip().lower() == tutorial_name),
+                (t for t in tutorial_data[language] if t['course_name'].strip().lower() == tutorial_name),
                 None
             )
 
