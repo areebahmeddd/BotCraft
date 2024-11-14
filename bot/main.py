@@ -6,6 +6,7 @@ from profile import profile_commands
 from project import project_commands
 from learn import learn_commands
 from brainstorm import brainstorm_commands
+from focus import focus_commands
 
 # Load environment variables from .env file
 load_dotenv()
@@ -45,5 +46,13 @@ async def on_message(message):
     # Handle brainstorm commands
     if message.content.startswith('/brainstorm'):
         await brainstorm_commands(message, bot)
+
+    # Handle focus commands
+    if message.content.startswith('/focus'):
+        await focus_commands(message, bot)
+
+    # Handle help command
+    if message.content.startswith('/help'):
+        await message.channel.send('```md\n# Available Commands\n\n/profile\n/project\n/learn\n/brainstorm\n/focus\n```')
 
 bot.run(os.getenv('DISCORD_TOKEN'))
