@@ -41,6 +41,7 @@ async def brainstorm_commands(message, bot):
             check=lambda text: text.author == message.author and text.channel == message.channel
         )
 
+        # Get the project details based on the user's choice
         project = project_msg.content.strip().title()
         resource = project_data.get(project)
 
