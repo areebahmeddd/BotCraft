@@ -44,6 +44,6 @@ async def on_message(message):
 
     # Handle learn commands
     if message.content.startswith('/learn'):
-        await learn_commands(message, tutorials, bot)
+        await learn_commands(message, tutorials)
 
 bot.run(os.getenv('DISCORD_TOKEN'))
