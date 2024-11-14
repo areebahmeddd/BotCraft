@@ -1,11 +1,11 @@
 import discord
 import os
-import json
 from dotenv import load_dotenv
 
 from profile import profile_commands
 from project import project_commands
 from learn import learn_commands
+from brainstorm import brainstorm_commands
 
 # Load environment variables from .env file
 load_dotenv()
@@ -18,10 +18,6 @@ bot = discord.Client(intents=intents)
 # Dictionaries to store all users' profiles and projects
 user_profiles = {}
 user_projects = {}
-
-# Load resources from the tutorials.json file
-with open('resources/tutorials.json', 'r') as f:
-    tutorials = json.load(f)
 
 @bot.event
 async def on_ready():
@@ -44,6 +40,10 @@ async def on_message(message):
 
     # Handle learn commands
     if message.content.startswith('/learn'):
-        await learn_commands(message, tutorials)
+        await learn_commands(message)
+
+    # Handle brainstorm commands
+    if message.content.startswith('/brainstorm'):
+        await brainstorm_commands(message)
 
 bot.run(os.getenv('DISCORD_TOKEN'))

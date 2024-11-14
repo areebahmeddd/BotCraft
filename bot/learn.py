@@ -1,6 +1,11 @@
 import discord
+import json
 
-async def learn_commands(message, tutorials):
+# Load tutorials data from JSON file
+with open('resources/tutorials.json', 'r') as f:
+    tutorials = json.load(f)
+
+async def learn_commands(message):
     command_parts = message.content.split(maxsplit=2)
 
     # Check if a subcommand is provided
