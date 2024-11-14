@@ -1,0 +1,82 @@
+{
+  "Data Visualizer": {
+    "name": "Data Visualizer Project",
+    "url": "https://realpython.com/python-matplotlib-guide/",
+    "description": "A beginner-friendly project to visualize datasets using Python and data visualization libraries like Matplotlib and Seaborn.",
+    "duration": "3 Hours",
+    "difficulty": "Easy",
+    "languages": "Python"
+  },
+  "Web Scraper": {
+    "name": "Web Scraping with Python",
+    "url": "https://www.scrapingbee.com/blog/web-scraping-python-beautiful-soup/",
+    "description": "Learn how to extract data from websites using Python and libraries like BeautifulSoup and Requests.",
+    "duration": "4 Hours",
+    "difficulty": "Easy",
+    "languages": "Python"
+  },
+  "AI Chatbot": {
+    "name": "Building an AI Chatbot",
+    "url": "https://www.analyticsvidhya.com/blog/2021/04/how-to-build-your-own-chatbot-using-deep-learning/",
+    "description": "An intermediate project to build a chatbot with NLP capabilities using Python and popular AI frameworks.",
+    "duration": "6 Hours",
+    "difficulty": "Intermediate",
+    "languages": "Python"
+  },
+  "Weather App": {
+    "name": "Weather Application",
+    "url": "https://www.freecodecamp.org/news/build-a-weather-app-with-python/",
+    "description": "Build a weather application using Python and the OpenWeatherMap API to fetch live weather data.",
+    "duration": "4 Hours",
+    "difficulty": "Easy",
+    "languages": "Python"
+  },
+  "Portfolio Website": {
+    "name": "Portfolio Website with Python",
+    "url": "https://www.digitalocean.com/community/tutorials",
+    "description": "Create a personal portfolio website using Python frameworks like Flask or Django.",
+    "duration": "5 Hours",
+    "difficulty": "Intermediate",
+    "languages": "Python"
+  },
+  "Expense Tracker": {
+    "name": "Expense Tracker Application",
+    "url": "https://www.geeksforgeeks.org/java-project-expense-tracker-application/",
+    "description": "Create an expense tracker to manage and visualize personal expenses using Java.",
+    "duration": "5 Hours",
+    "difficulty": "Intermediate",
+    "languages": "Java"
+  },
+  "Library System": {
+    "name": "Library Management System",
+    "url": "https://www.codewithc.com/library-management-system-java-mysql/",
+    "description": "Develop a library management application using Java to track book loans, returns, and users.",
+    "duration": "6 Hours",
+    "difficulty": "Intermediate",
+    "languages": "Java"
+  },
+  "Banking App": {
+    "name": "Java Banking Application",
+    "url": "https://www.javaguides.net/2018/11/console-based-java-banking-application.html",
+    "description": "A Java project simulating basic banking functionalities such as deposits, withdrawals, and balance checks.",
+    "duration": "7 Hours",
+    "difficulty": "Intermediate",
+    "languages": "Java"
+  },
+  "Inventory Manager": {
+    "name": "Inventory Management System",
+    "url": "https://www.geeksforgeeks.org/inventory-management-system-using-java/",
+    "description": "Build an inventory management system to track stock levels, sales, and orders, using Java.",
+    "duration": "6 Hours",
+    "difficulty": "Intermediate",
+    "languages": "Java"
+  },
+  "E-Commerce Site": {
+    "name": "Building an E-commerce Site",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website",
+    "description": "Create a fully functional e-commerce site with a cart, checkout, and payment gateway integration.",
+    "duration": "8 Hours",
+    "difficulty": "Hard",
+    "languages": "Java"
+  }
+}
