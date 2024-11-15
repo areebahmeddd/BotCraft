@@ -1,4 +1,3 @@
-# Python related
 .venv/
 __pycache__/
 .env
