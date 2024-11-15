@@ -1,14 +1,11 @@
-import discord
-
-# Function to collect user input
-async def get_user_input(message, user_id, prompt, field_name, bot):
-    # Send prompt and wait for user response
+async def get_user_input(message, user_id, prompt, bot):
+    # Send prompt to the user
     await message.channel.send(prompt)
     
-    # Create a check function to only accept responses from the correct user in the right channel
-    def check(m):
-        return m.author.id == user_id and m.channel == message.channel
+    # Wait for a valid response from the correct user in the correct channel
+    def check(text):
+        return text.author.id == user_id and text.channel == message.channel
     
-    response = await bot.wait_for("message", check=check)
+    response = await bot.wait_for('message', check=check)
     
     return response.content

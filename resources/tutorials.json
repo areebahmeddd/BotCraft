@@ -1,0 +1,66 @@
+{
+  "python": [
+    {
+      "course_name": "Official Python Documentation",
+      "site_name": "Python.org",
+      "url": "https://docs.python.org/3/",
+      "description": "Comprehensive official documentation for Python 3, including tutorials and guides.",
+      "duration": "Self-paced",
+      "language": "English",
+      "instructor": "Not Specified",
+      "type": "Free"
+    },
+    {
+      "course_name": "W3Schools Python",
+      "site_name": "W3Schools",
+      "url": "https://www.w3schools.com/python/",
+      "description": "Basic to intermediate Python tutorials with interactive examples and exercises.",
+      "duration": "Self-paced",
+      "language": "English",
+      "instructor": "Not Specified",
+      "type": "Free"
+    },
+    {
+      "course_name": "100 Days of Python",
+      "site_name": "Udemy",
+      "url": "https://www.udemy.com/course/100-days-of-python/",
+      "description": "A comprehensive 100-day Python course by Angela Yu that covers Python fundamentals and projects.",
+      "duration": "Self-paced, 30 hours",
+      "language": "English",
+      "instructor": "Angela Yu",
+      "type": "Paid"
+    }
+  ],
+  "java": [
+    {
+      "course_name": "Official Java Documentation",
+      "site_name": "Oracle",
+      "url": "https://docs.oracle.com/en/java/",
+      "description": "Official Java documentation for developers, including API references and tutorials.",
+      "duration": "Self-paced",
+      "language": "English",
+      "instructor": "Not Specified",
+      "type": "Free"
+    },
+    {
+      "course_name": "GeeksforGeeks Java",
+      "site_name": "GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/java/",
+      "description": "Tutorials and articles covering Java from beginner to advanced levels, including common interview questions.",
+      "duration": "Varies by article/tutorial",
+      "language": "English",
+      "instructor": "Not Specified",
+      "type": "Free"
+    },
+    {
+      "course_name": "JavaTPoint Java Tutorials",
+      "site_name": "JavaTPoint",
+      "url": "https://www.javatpoint.com/",
+      "description": "Comprehensive tutorials and examples on Java programming, covering everything from basic to advanced topics.",
+      "duration": "Self-paced",
+      "language": "English",
+      "instructor": "Not Specified",
+      "type": "Free"
+    }
+  ]
+}
